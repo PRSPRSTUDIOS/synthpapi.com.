@@ -1,0 +1,174 @@
+/* Define CSS variables for the color scheme */
+:root {
+    --main-bg-color: #214283;     /* Main background color */
+    --text-color: #ffffff;        /* Text color */
+    --link-color: #ffffff;        /* Link color */
+    --hover-link-color: #3b78da12; /* Hover effect color */
+    --line-color: #c3c3c30a;      /* Line color */
+    --font-size: 16px;            /* Base font size */
+    --heading-font-size: 19px;    /* Heading font size */
+    --text-smaller: 13px;         /* Font size for text under headers */
+    --font-family: 'Chakra Petch', sans-serif; /* Font family */
+    --logo-size: 80%;            /* Make logo responsive */
+    --line-width: 100%;           /* Width for the lines after headers */
+    --space-between: 10px;        /* Space between elements */
+    --content-width: 90%;         /* Responsive content width */
+    --hover-link-underline: 0px;
+    --hover-highlight-color: #809ddd10;
+}
+
+body {
+    font-family: var(--font-family);
+    font-size: var(--font-size);
+    background-color: var(--main-bg-color); 
+    color: var(--text-color);
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the entire body content */
+    min-height: 100vh;
+}
+
+main {
+        width: var(--content-width); /* Responsive width for main content */
+        padding-bottom: 30px;
+        flex-grow: 1; /* Allow main content to grow and take available space */
+    }
+
+header {
+    width: var(--content-width); /* Responsive width for header content */
+    text-align: left;
+    padding: 20px;
+}
+
+/* Social Links */
+.social-links {
+    display: inline-flex;
+    justify-content: flex-start; /* Align to the left */
+    gap: 10px; /* Add space between icons */
+}
+
+.fa {
+    padding: 18px;
+    font-size: 80px; /* Increase size of icons */
+    width: 48px;
+    height: 48px;
+    text-align: center;
+    border-radius: 100%; /* Make icons circular */
+    background-color: #ffffff !important; /* White background */
+    color: #000000 !important; /* Black icons */
+    text-decoration: none;
+    line-height: 488px; /* Center icon vertically */
+}
+
+.fa:hover {
+    opacity: 1.6;
+}
+
+/* Specific icon styles if needed */
+.fa-tiktok {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+}
+
+.fa-twitter {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+}
+
+.fa-instagram {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+}
+
+.fa-youtube {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+}
+
+/* Logo Section */
+.logo-section {
+    margin: var(--space-between) 0;
+    text-align: center;
+    width: var(--content-width); /* Responsive logo section width */
+}
+
+.logo img {
+    width: var(--logo-size); /* Responsive logo size */
+    max-width: 100%; /* Prevent logo from exceeding container */
+}
+
+/* Section Headers */
+.section-header {
+    display: block;
+    color: var(--link-color);
+    padding: 10px 0;
+    font-size: var(--heading-font-size);
+    cursor: pointer;
+    text-align: left; /* Left-align the section headers */
+    width: var(--line-width); /* Width for line under headers */
+    border-bottom: 2px solid var(--line-color); /* Line below the header */
+    position: relative;
+    transition: background-color 0.3s ease, text-decoration 0.3s ease;
+}
+
+/* Hover animations for headers */
+.section-header:hover {
+    background-color: var(--hover-highlight-color); /* Background highlight on hover */
+    text-decoration: underline; /* Underline effect on hover */
+}
+
+/* Text under the header is smaller and left-aligned */
+.section-content {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: left; /* Left-align the content */
+}
+
+.section-content li {
+    font-size: var(--text-smaller); /* Smaller text for the content under headers */
+    padding: 4px 0;
+}
+
+/* Section content links */
+.section-content a {
+    color: var(--text-color);
+    padding: 10px;
+    display: block;
+    text-rendering: optimizeLegibility;
+}
+
+.section-content a:hover {
+    text-decoration: var(--hover-link-underline);
+}
+/* Initially hide section content */
+.section-content {
+    display: none;
+}
+
+/* Footer Section */
+footer {
+    background-color: var(--main-bg-color);
+    text-align: left;
+    width: var(--content-width); /* Responsive width for footer content */
+    margin: auto;
+    padding: 20px 0;
+}
+
+footer a {
+    color: var(--link-color);
+    text-decoration: none;
+    font-size: var(--font-size);
+}
+
+footer a:hover {
+    color: var(--hover-link-color);
+}
+
+/* Main Content */
+main {
+    width: var(--content-width); /* Responsive width for main content */
+    padding-bottom: 30px;
+}
