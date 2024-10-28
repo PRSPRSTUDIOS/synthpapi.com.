@@ -6,10 +6,10 @@
     --hover-link-color: #3b78da12; /* Hover effect color */
     --line-color: #c3c3c30a;      /* Line color */
     --font-size: 16px;            /* Base font size */
-    --heading-font-size: 19px;    /* Heading font size */
+    --heading-font-size: 29px;    /* Heading font size */
     --text-smaller: 13px;         /* Font size for text under headers */
     --font-family: 'Chakra Petch', sans-serif; /* Font family */
-    --logo-size: 80%;            /* Make logo responsive */
+    --logo-size: 250%;            /* Make logo responsive */
     --line-width: 100%;           /* Width for the lines after headers */
     --space-between: 10px;        /* Space between elements */
     --content-width: 90%;         /* Responsive content width */
@@ -38,7 +38,7 @@ main {
 
 header {
     width: var(--content-width); /* Responsive width for header content */
-    text-align: left;
+    text-align: center;
     padding: 20px;
 }
 
@@ -68,23 +68,23 @@ header {
 
 /* Specific icon styles if needed */
 .fa-tiktok {
-    background-color: #ffffff !important;
-    color: #000000 !important;
+    background-color: #1c3869;
+    color: #ffffff !important;
 }
 
 .fa-twitter {
-    background-color: #ffffff !important;
-    color: #000000 !important;
+    background-color: #1c3869;
+    color: #ffffff !important;
 }
 
 .fa-instagram {
-    background-color: #ffffff !important;
-    color: #000000 !important;
+    background-color: #1c3869;
+    color: #ffffff !important;
 }
 
 .fa-youtube {
-    background-color: #ffffff !important;
-    color: #000000 !important;
+    background-color: #1c3869;
+    color: #ffffff !important;
 }
 
 /* Logo Section */
@@ -102,6 +102,7 @@ header {
 /* Section Headers */
 .section-header {
     display: block;
+    text-decoration: bold;
     color: var(--link-color);
     padding: 10px 0;
     font-size: var(--heading-font-size);
@@ -129,13 +130,13 @@ header {
 
 .section-content li {
     font-size: var(--text-smaller); /* Smaller text for the content under headers */
-    padding: 4px 0;
+    padding: 1px 0;
 }
 
 /* Section content links */
 .section-content a {
     color: var(--text-color);
-    padding: 10px;
+    padding: 5px;
     display: block;
     text-rendering: optimizeLegibility;
 }
