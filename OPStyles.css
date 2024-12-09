@@ -193,7 +193,6 @@ main {
 }
 
 .video-container iframe {
-    max-width: 175%;
-    height: auto; /* Maintain aspect ratio */
+    max-width: 100%;
     border: none; /* Remove border around the iframe */
 }
