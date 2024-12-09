@@ -87,15 +87,27 @@ header {
     color: #ffffff !important;
 }
 
+.fa-soundcloud {
+    background-color: #1c3869;
+    color: #ffffff !important;
+}
+
+.fa-bandcamp {
+    background-color: #1c3869;
+    color: #ffffff !important;
+}
+
 /* Logo Section */
 .logo-section {
-    margin: var(--space-between) 0;
+    margin: 10px 0; /* Reduce the top margin */
     text-align: center;
     width: var(--content-width); /* Responsive logo section width */
+    height: var(--conten-height);
 }
 
 .logo img {
     width: var(--logo-size); /* Responsive logo size */
+    height: var(--logo-size);
     max-width: 100%; /* Prevent logo from exceeding container */
 }
 
@@ -152,7 +164,7 @@ header {
 /* Footer Section */
 footer {
     background-color: var(--main-bg-color);
-    text-align: left;
+    text-align: center;
     width: var(--content-width); /* Responsive width for footer content */
     margin: auto;
     padding: 20px 0;
@@ -172,4 +184,16 @@ footer a:hover {
 main {
     width: var(--content-width); /* Responsive width for main content */
     padding-bottom: 30px;
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    margin: 40px 0; /* Add some spacing around the video */
+}
+
+.video-container iframe {
+    max-width: 175%;
+    height: auto; /* Maintain aspect ratio */
+    border: none; /* Remove border around the iframe */
 }
