@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Page</title>
+    <!-- Link to Google Fonts for Chakra Petch -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;700&display=swap">
+    <link rel="stylesheet" href="OPStyles.css">
+    <!-- Link to Font Awesome for social media icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Header Section with Social Media Icons -->
+    <header>
+        <nav class="social-links">
+            <a href="https://x.com/synthpapi" class="fab fa-twitter"></a>
+            <a href="https://www.youtube.com/@synthpapi" class="fab fa-youtube"></a>
+            <a href="https://www.instagram.com/lovesynthpapi/" class="fab fa-instagram"></a>
+            <a href="https://www.tiktok.com/@synthpapi" class="fab fa-tiktok"></a>
+            <a href="https://soundcloud.com/lovesynthpapi" class="fab fa-soundcloud"></a>
+            <a href="https://synthpapi.bandcamp.com/" class="fab fa-bandcamp"></a>
+        </nav>
+    </header>
+
+    <!-- Logo Section -->
+    <section class="logo-section">
+        <div class="logo">
+            <a href="https://synthpapi.bandcamp.com/">
+                <img src="synthpapi baby blue logo 2.PNG" alt="SynthPapi Logo">
+            </a>
+        </div>
+        
+        <!-- YouTube Video Embed -->
+    <div class="video-container">
+        <iframe 
+            width="560" 
+            height="315" 
+            src="https://www.youtube.com/embed/VHKXLpSYGRg"             
+            title="YouTube video player" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+        </iframe>
+    </div>
+    </section>
+
+    <!-- Main Body Section with Left-Aligned Headers -->
+    <main>
+        <section class="main-section">
+            <div class="section">
+                <label class="section-header"><small>About</small></label>
+                <ul class="section-content">
+                    <br><li>Producer + Songwtier</li></br>
+                </ul>
+            </div>
+            <div class="section">
+                <label class="section-header"><small>Projects</small></label>
+                <ul class="section-content">
+                    <li><a href="https://synthpapi.bandcamp.com/album/solange-chop-beat-tape-vol-1">Solange Chop Beat Tape</a></li>
+                    <li><a href="https://synthpapi.bandcamp.com/album/whatever-happened-to-spottie-jones">Whatever Happened to Spottie Jones?</a></li>
+                    <li><a href="https://synthpapi.bandcamp.com/album/blue-eyed-white-dragon">Blue Eyed White Dragon</a></li>
+                    <li><a href="https://synthpapi.bandcamp.com/album/mango-dango">Mango Dango</a></li>
+                    <li><a href="https://synthpapi.bandcamp.com/album/silver-ep">Silver EP</a></li>
+                    <li><a href="https://youtube.com/playlist?list=PLpLgPOx-6Lkpd4K0t5KpFo4V3PScxqT7U&si=n0iHmT9T5K7LtaqJ">BEATS</a></li>
+                </ul>
+            </div>
+            <div class="section">
+                <label class="section-header"><small>Downloads</small></label>
+                <ul class="section-content">
+                    <li><a href="https://www.dropbox.com/scl/fo/q0euf2uodqnlxsbmf9igl/AId3z0dVcgWo3Bz3Noqx8lE?rlkey=g7w6gqxa9s1swjxv7mb6tl2f6&st=ij7jrhji&dl=0">synthpack vol.1</a></li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <small>Contact</small> - <small>lovesynthpapi@gmail.com</small>
+    </footer>
+
+    <!-- JavaScript to toggle the section content on click -->
+    <script>
+        // Get all the section headers
+        const headers = document.querySelectorAll('.section-header');
+
+        // Add a click event listener to each header
+        headers.forEach(header => {
+            header.addEventListener('click', () => {
+                // Toggle the display of the associated section content
+                const content = header.nextElementSibling;
+                if (content.style.display === "block") {
+                    content.style.display = "none";
+                } else {
+                    content.style.display = "block";
+                }
+            });
+        });
+    </script>
+</body>
+</html>

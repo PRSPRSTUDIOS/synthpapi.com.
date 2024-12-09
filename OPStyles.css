@@ -189,7 +189,7 @@ main {
 .video-container {
     display: flex;
     justify-content: center;
-    margin: 40px 0; /* Add some spacing around the video */
+    margin: 20px 0; /* Add some spacing around the video */
 }
 
 .video-container iframe {
