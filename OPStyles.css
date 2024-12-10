@@ -126,6 +126,17 @@ header {
     transition: background-color 0.3s ease, text-decoration 0.3s ease;
 }
 
+.section-header a {
+    color: inherit; /* Inherit color from parent */
+    text-decoration: none; /* Remove underline */
+    padding: 10px 0; /* Maintain spacing */
+    font-size: var(--heading-font-size);
+    width: var(--line-width); /* Width for line under headers */
+    position: relative;
+
+
+}
+
 /* Hover animations for headers */
 .section-header:hover {
     background-color: var(--hover-highlight-color); /* Background highlight on hover */
@@ -196,3 +207,4 @@ main {
     max-width: 100%;
     border: none; /* Remove border around the iframe */
 }
+
