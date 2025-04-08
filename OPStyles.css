@@ -99,7 +99,7 @@ header {
 
 /* Logo Section */
 .logo-section {
-    margin: 10px 0; /* Reduce the top margin */
+    margin: 5px 0; /* Reduce the top margin */
     text-align: center;
     width: var(--content-width); /* Responsive logo section width */
     height: var(--conten-height);
