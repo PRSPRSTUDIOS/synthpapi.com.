@@ -20,7 +20,7 @@
 body {
     font-family: var(--font-family);
     font-size: var(--font-size);
-    background-color: var(--main-bg-color); 
+    background-color: var(--main-bg-color);
     color: var(--text-color);
     margin: 0;
     padding: 20px;
@@ -30,6 +30,16 @@ body {
     min-height: 100vh;
 }
 
+.rss-ticker-wrapper {
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+    overflow: hidden;
+    padding: 10px 0;
+}
+rssapp-ticker {
+    width: 100%;
+    display: block;
+}
 main {
         width: var(--content-width); /* Responsive width for main content */
         padding-bottom: 30px;
@@ -172,6 +182,11 @@ header {
     display: none;
 }
 
+/* Merch gallery: initially hidden, shown as flex when toggled */
+.section-content.merch-gallery {
+    display: none;
+}
+
 /* Footer Section */
 footer {
     background-color: var(--main-bg-color);
@@ -208,3 +223,41 @@ main {
     border: none; /* Remove border around the iframe */
 }
 
+.merch-gallery {
+    display: none;
+    flex-direction: row;
+    overflow-x: auto;
+    overflow-y: hidden;
+    gap: 20px;
+    padding: 20px 0;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+}
+
+.section-content.merch-gallery[style*="flex"] {
+    display: flex !important;
+}
+
+.merch-gallery::-webkit-scrollbar-thumb {
+    background: rgba(255,255,255,0.2);
+    border-radius: 10px;
+}
+
+.merch-gallery a {
+    flex: 0 0 auto;
+    width: 240px;
+    transition:
+        transform 0.25s ease,
+        opacity 0.25s ease;
+}
+
+.merch-gallery a:hover {
+    transform: translateY(-6px) scale(1.02);
+    opacity: 1;
+}
+
+.merch-gallery img {
+    width: 75%;
+    border-radius: 18px;
+    display: block;
+}
