@@ -24,11 +24,6 @@
             <a href="https://soundcloud.com/lovesynthpapi" class="fab fa-soundcloud"></a>
             <a href="https://synthpapi.bandcamp.com/" class="fab fa-bandcamp"></a>
         </nav>
-<div class="rss-ticker-wrapper">
-    <rssapp-ticker id="ZxduseBMdAZwYVyD"></rssapp-ticker>
-</div>
-
-<script src="https://widget.rss.app/v1/ticker.js" type="text/javascript" async></script>
    
 </header>
 
@@ -60,6 +55,13 @@
             </ul>
         </div>
         <div class="section">
+    <label class="section-header">
+        <a href="blog.html">
+            <small>Blog</small>
+        </a>
+    </label>
+</div>
+        <div class="section">
             <label class="section-header"><small>Projects</small></label>
             <ul class="section-content">
                 <li><a href="https://synthpapi.bandcamp.com/album/solange-chop-beat-tape-vol-1">Solange Chop Beat
@@ -70,21 +72,14 @@
                 </li>
                 <li><a href="https://synthpapi.bandcamp.com/album/mango-dango">Mango Dango</a></li>
                 <li><a href="https://synthpapi.bandcamp.com/album/silver-ep">Silver EP</a></li>
+                <li><a href=""><b>Features</b></a></li>
 
             </ul>
         </div>
         <div class="section">
             <label class="section-header"><small>Photo Gallery</small></label>
             <ul class="section-content">
-                <li>
-                    <a href="images/photo1.jpg" target="_blank">Studio Session</a>
-                </li>
-                <li>
-                    <a href="images/photo2.jpg" target="_blank">Live Performance</a>
-                </li>
-                <li>
-                    <a href="images/photo3.jpg" target="_blank">Behind The Scenes</a>
-                </li>
+              
             </ul>
         </div>
         <div class="section">
@@ -115,26 +110,24 @@
                     <img src="images/synthpapi_hoodie__black_w_green_logo__blue_bg Background Removed.png"
                         alt="Shirt 2">
 
+            </a>
+
             </div>
         </div>
         <div class="section">
             <label class="section-header"><small>Downloads</small></label>
             <ul class="section-content">
-                <li><a href="https://buy.stripe.com/28o9Dgc0O1bkgus6os">synthpack vol.1</a></li>
+                <li>
+                    <a href="https://buy.stripe.com/28o9Dgc0O1bkgus6os" target="_blank">synthpack vol.1</a>
+                </li>
             </ul>
 
         </div>
         <div class="section">
-            <label class="section-header"><small>More</small></label>
+            <label class="section-header"><small>DJ Sets</small></label>
             <ul class="section-content">
                 <li>
-                    <a href="https://open.spotify.com/" target="_blank">Spotify</a>
-                </li>
-                <li>
-                    <a href="https://music.apple.com/" target="_blank">Apple Music</a>
-                </li>
-                <li>
-                    <a href="https://www.patreon.com/" target="_blank">Patreon</a>
+                    <a> Comming Soon </a>
                 </li>
             </ul>
         </div>
@@ -151,9 +144,13 @@
     // Get all the section headers
     const headers = document.querySelectorAll('.section-header');
     // Add a click event listener to each header
-    headers.forEach(header => {
-        header.addEventListener('click', () => {
-            // Toggle the display of the associated section content
+headers.forEach(header => {
+
+    if (header.querySelector("a")) {
+        return;
+    }
+
+    header.addEventListener('click', () => {            // Toggle the display of the associated section content
             const content = header.nextElementSibling;
             const computedDisplay = getComputedStyle(content).display;
 
